@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.jpg">
+    <link rel="stylesheet" href="../sass/main.css">
+    <title>Contactame</title>
+    <meta name="description" content="Bienvenido al sitio de las mejores nails y diseño de manicure! Contacto para turnos.">
+    <meta name="keywords" content="uñas, nails, colores, diseño, belleza, cumpleaños, casamientos">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar bg-danger navbar-expand-lg" data-bs-theme="dark" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Mechi's Nails</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./videos.html">Aprendé conmigo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./salon.html">Salón</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contactame</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.youtube.com/@MelisaRochaNailArt">YouTube</a>
+            </li>              
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.instagram.com/estoeslasunias/?hl=es">Instagram</a>
+            </li>              
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+  <!--Section heading-->
+  <h1 class="h1-responsive font-weight-bold text-center my-4 text-danger">Contactame</h1>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Si tenés alguna consulta, no dudes en comunicarte.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control" placeholder="Introduce tu nombre">
+                          <label for="name" class="">Nombre</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control" placeholder="Ingresa tu correo">
+                          <label for="email" class="">Tu mail</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="En que te puedo ayudar?"></textarea>
+                          <label for="message">Tu mensaje</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-danger" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Nueva Atlantis</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+ 54 9 11 1111 1111</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>contacto@hotmail.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+<div class="caja-formulario">
+  <h1 class="text-danger h1 text-center">Salón</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25571.23523786625!2d-56.70626367186378!3d-36.76086482951844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c65b37d474eef%3A0x3354b326053dede2!2sNueva%20Atlantis%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1679607839444!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+
+<footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <div class="red-social">
+              <a href="https://www.youtube.com/@MelisaRochaNailArt" class="fa fa-youtube"></a>
+              <a href="https://www.instagram.com/estoeslasunias/?hl=es" class="fa fa-instagram"></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</html>

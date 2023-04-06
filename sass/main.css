@@ -1,0 +1,143 @@
+/* VIDEOS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+iframe {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+.column iframe {
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+/* Nesting y Mixin */
+.container-img {
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+}
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%;
+}
+.container-img .box-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-img .box-img:nth-child(1) {
+  grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4) {
+  grid-row-start: span 2;
+}
+
+@media screen and (max-width: 800px) {
+  .container-img {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 200px;
+  }
+  .container-img .box-img:nth-child(1) {
+    grid-column-start: span 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-img {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-img .box-img img {
+    height: 200px;
+  }
+}
+/* CONTACTO*/
+.mapa {
+  width: 100%;
+  height: 50rem;
+  margin: 0;
+  padding: 2rem 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+
+/* VARIABLES */
+nav.navbar {
+  background-color: #CC1414;
+}
+
+/* FOOTER */
+/* Nesting */
+.pie-pagina {
+  width: 100%;
+  background-color: #ffc0cb;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-right: 10px;
+  background-color: #ffc0cb;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 a:hover {
+  color: #00ffff;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}/*# sourceMappingURL=main.css.map */
